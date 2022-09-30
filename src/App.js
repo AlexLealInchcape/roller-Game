@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import DiceGame from "../src/Components/DiceGame/DiceGame";
+
+export default function App() {
+  // logica de programacion
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DiceGame />
     </div>
   );
 }
-
-export default App;
