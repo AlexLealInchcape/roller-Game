@@ -1,0 +1,32 @@
+.dados{
+    display: flex;
+    justify-content:center;
+    padding: 5px;
+    margin: 5px;
+
+}
+.dados img {
+    padding: 3px;
+   
+}
+
+.dados img:hover{
+    padding: 3px;
+    
+    animation-name: dado;
+    
+}
+
+@keyframes dado{
+    from{transform: rotateX(360deg); transition-duration: 1s;}
+    to{transform: rotateZ(360deg);transition-duration:1.5s ; }
+}
+
+.content{
+
+    display: block;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}

@@ -1,6 +1,7 @@
 //import "./DiceGame.module.css";
 import { useState } from "react";
 import ShowImages from "../ShowImages/ShowImages";
+import styles from "./DiceGame.module.css";
 
 export default function DiceGame() {
   // reiniciar estados
@@ -34,7 +35,7 @@ export default function DiceGame() {
   };
 
   return (
-    <div className="App">
+    <div className={styles.content}>
       <h1>Dice Roller</h1>
       <div>
         {[1, 2, 3, 4, 5].map((number) => {
@@ -47,12 +48,10 @@ export default function DiceGame() {
           );
         })}
       </div>
-      <div>
+      <div class={styles.dados} >
         {roll.map((r, i) => {
           return <ShowImages key={i} roll={r} />;
         })}
-
-        <p> Mapeo del componente imagenes</p>
       </div>
       <div>
         <p>resultado</p>
